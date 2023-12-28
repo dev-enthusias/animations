@@ -1,0 +1,147 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  font-size: 1.6rem;
+  font-family: 'Roboto Condensed', sans-serif;
+  background: #0f0f0f;
+  overflow: hidden;
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.menu {
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 0 2rem;
+}
+
+.row {
+  position: relative;
+  display: flex;
+}
+
+.r-1 {
+  left: -110%;
+  justify-content: flex-end;
+  font-size: 10rem;
+}
+
+.r-2 {
+  left: 110%;
+  justify-content: flex-end;
+  font-size: 8rem;
+  padding-right: 2em;
+}
+
+.r-3 {
+  left: -110%;
+  font-size: 8rem;
+}
+
+.r-4 {
+  left: 110%;
+  justify-content: space-between;
+  font-size: 8rem;
+  padding-left: 1em;
+}
+
+.r-5 {
+  left: -110%;
+  justify-content: space-between;
+  font-size: 10rem;
+  padding-left: 0.5em;
+}
+
+.website-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: auto;
+  clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+  background: url('./bg.jpg') no-repeat 50% 50%;
+  background-size: cover;
+  transform: scale(1);
+}
+
+.website-content h1 {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  font-size: 3rem;
+  letter-spacing: -0.02em;
+  margin: 0;
+  line-height: 1;
+  text-align: center;
+  padding: 1em;
+}
+
+.nav {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2em;
+  font-size: 20px;
+  mix-blend-mode: difference;
+}
+
+.logo {
+  background: #fff;
+  color: #000;
+  padding: 0.35em 0.5em 0.2em 0.5em;
+  line-height: 1;
+  border-radius: 0.25em;
+}
+
+button.toggle {
+  font-family: 'Roboto Condensed';
+  color: #fff;
+  background: none;
+  outline: none;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+@media (max-width: 900px) {
+  .website-content h1 {
+    font-size: 40px;
+  }
+
+  .r-1,
+  .r-5 {
+    font-size: 75px;
+  }
+
+  .r-2,
+  .r-3,
+  .r-4 {
+    font-size: 50px;
+  }
+}
